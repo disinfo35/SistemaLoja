@@ -10,13 +10,22 @@ namespace SistemaLoja.Models
     {
         [Key]
         public int FuncionarioId { get; set; }
+
         public string Nome { get; set; }
+
         public string SobreNome { get; set; }
+
         public decimal Salario { get; set; }
+
         public float Comissao { get; set; }
+
         public DateTime Nascimento { get; set; }
+
         public DateTime Cadastro { get; set; }
+
         public string Email { get; set; }
+        public int TipoDocumentoId { get; set; }
+
 
         public virtual TipoDocumento TipoDocumento { get; set; }
     }
