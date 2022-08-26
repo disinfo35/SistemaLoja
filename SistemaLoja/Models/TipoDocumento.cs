@@ -11,5 +11,7 @@ namespace SistemaLoja.Models
         [Key]
         public int TipoDocumentoId { get; set; }
         public string Descricao { get; set; }
+
+        public virtual ICollection<Funcionario> Funcionarios { get; set; }
     }
 }
