@@ -9,6 +9,7 @@ namespace SistemaLoja.Migrations
     {
         public Configuration()
         {
+            AutomaticMigrationDataLossAllowed = true;
             AutomaticMigrationsEnabled = true;
             ContextKey = "SistemaLoja.Data.SistemaLojaContext";
         }
